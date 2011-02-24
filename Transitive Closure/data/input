@@ -1,0 +1,16 @@
+(id0,[name#a])  (id1,[name#b])  MATCH
+(id1,[name#a])  (id2,[name#b])  MATCH
+(id2,[name#a])  (id3,[name#b])  MATCH
+(id3,[name#a])  (id4,[name#b])  MATCH
+(id4,[name#a])  (id5,[name#b])  MATCH
+(id5,[name#a])  (id6,[name#b])  MATCH
+(id6,[name#a])  (id7,[name#b])  MATCH
+(id10,[name#a])  (id11,[name#b])  MATCH
+(id11,[name#a])  (id12,[name#b])  MATCH
+(id12,[name#a])  (id13,[name#b])  MATCH
+(id13,[name#a])  (id14,[name#b])  MATCH
+(id14,[name#a])  (id15,[name#b])  MATCH
+(id15,[name#a])  (id16,[name#b])  MATCH
+(id16,[name#a])  (id17,[name#b])  MATCH
+(id17,[name#a])  (id18,[name#b])  MATCH
+(id18,[name#a])  (id19,[name#b])  MATCH
