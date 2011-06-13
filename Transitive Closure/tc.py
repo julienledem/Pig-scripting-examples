@@ -65,8 +65,8 @@ def main():
 	output = workDir+"/output"
 	 
 	# INIT
-        Pig.fs("rmr "+workDir+"/warshall_0")
-        Pig.fs("rmr "+workDir+"/to_join_0")
+	Pig.fs("rmr "+workDir+"/warshall_0")
+	Pig.fs("rmr "+workDir+"/to_join_0")
 	
 	# generate relationship, reverse relationship and relationship to self (only for MATCH)
 	# initialize to not followed
@@ -82,8 +82,8 @@ def main():
 	for i in range(10):
 		n = i+1
 		print "-------- ITER "+str(n)
-        	Pig.fs("rmr "+workDir+"/warshall_"+str(n))
-        	Pig.fs("rmr "+workDir+"/to_join_"+str(n))
+		Pig.fs("rmr "+workDir+"/warshall_"+str(n))
+		Pig.fs("rmr "+workDir+"/to_join_"+str(n))
 		job = Pig.compile("""
 			warshall_n_minus_1 = LOAD '$workDir/warshall_$i' USING BinStorage AS (id1:chararray, id2:chararray, status:chararray);
 			to_join_n_minus_1 = LOAD '$workDir/to_join_$i' USING BinStorage AS (id1:chararray, id2:chararray, status:chararray);
@@ -110,3 +110,6 @@ def main():
 		group_result = DISTINCT members;
 		STORE group_result INTO '$output' USING PigStorage;
 	""").bind().runSingle()
+
+if __name__ == '__main__':
+	main()
