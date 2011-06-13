@@ -1,0 +1,3 @@
+www.A.com	1	{ (www.B.com), (www.C.com) }
+www.B.com	1	{ (www.C.com) }
+www.C.com	1	{ (www.A.com) }
