@@ -38,7 +38,7 @@ STORE max_diff
 """)
 
 d = 0.5
-docs_in= "data/pagerank_data_simple"
+docs_in= "data/simple"
 
 for i in range(10):
 	docs_out = "out/pagerank_data_" + str(i + 1)
