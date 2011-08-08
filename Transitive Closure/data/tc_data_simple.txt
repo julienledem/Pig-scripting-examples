@@ -1,0 +1,16 @@
+id0	id1
+id1	id2
+id2	id3
+id3	id4
+id4	id5
+id5	id6
+id6	id7
+id7	id8
+id11	id10
+id12	id11
+id13	id12
+id14	id13
+id14	id15
+id15	id16
+id16	id17
+id17	id18
