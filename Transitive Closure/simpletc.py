@@ -18,9 +18,9 @@ def normalize(t):
 
 @outputSchema("rels:{t:(id1: chararray, id2: chararray, followed: int)}")
 def follow(to_follow_id1, links_id1, links_id2):
-	outputBag = [ normalize( (links_id1, links_id2, True) ) ] 
+	outputBag = [ normalize( (links_id1, links_id2, 1) ) ] 
 	if to_follow_id1 is not None:
-		outputBag.append( normalize( (to_follow_id1, links_id2, False) ) )
+		outputBag.append( normalize( (to_follow_id1, links_id2, 0) ) )
 	return outputBag
 
 @outputSchema("followed: int")
